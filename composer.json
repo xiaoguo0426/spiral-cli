@@ -1,0 +1,28 @@
+{
+  "name": "spiral/app-cli",
+  "description": "Spiral Skeleton Console Application",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wolfy-J",
+      "email": "wolfy.jd@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "spiral/framework": "^2.0",
+    "spiral/console": "^1.2",
+    "spiral/database": "^2.7",
+    "spiral/migrations": "^2.0"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "php app.php configure -vv"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
